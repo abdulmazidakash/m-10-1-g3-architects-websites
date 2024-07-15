@@ -11,17 +11,32 @@
     display: flex;
 }
 
+.section-title{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
 
 /* color styles here  */
 
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.text-primary{
+    color: rgba(255, 144, 14, 1);
+}
 
 .text-gray{
     color: #424242;
 }
+.text-light-gray{
+    color: #727272;
+}
 
+
+main >section{
+    margin-top: 130px;
+}
 /* navbar styles here  */
 .nav-item{
     list-style: none;
@@ -72,12 +87,38 @@
     font-weight: 600;
 }
 
+/* teams section styles stars here  */
+.teams{
+    align-items: center;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-content{
+    max-width: 530px;
+    margin-left: 70px;
+    /* align-content: center; */
+}
+#quick-list{
+    font-weight: 500;
+}
+
 
 /* media query  */
 @media screen and (max-width: 576px) {
     .nav-bar, 
-    .nav-links{
+    .nav-links,
+    .teams
+    {
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
     }
     
 }
@@ -85,8 +126,13 @@
 /* medium device responsive query  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .nav-bar, 
-    .nav-links{
+    .nav-links, 
+    .teams
+    {
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(2, 1fr);
     }
     
 }
