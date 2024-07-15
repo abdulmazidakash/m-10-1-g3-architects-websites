@@ -40,3 +40,53 @@
     font-weight: 700;
     font-size: 3rem;
 }
+
+.nav-bar, .banner{
+    max-width: 1440px;
+    margin:  0 auto;
+}
+
+/* banner styles here  */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.banner-image{
+    width: 100%;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* media query  */
+@media screen and (max-width: 576px) {
+    .nav-bar, 
+    .nav-links{
+        flex-direction: column;
+    }
+    
+}
+
+/* medium device responsive query  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-bar, 
+    .nav-links{
+        flex-direction: column;
+    }
+    
+}
