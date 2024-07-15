@@ -1,0 +1,42 @@
+
+
+.wittgenstein-normal {
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared-styles here  */
+.display-flex{
+    display: flex;
+}
+
+
+/* color styles here  */
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-gray{
+    color: #424242;
+}
+
+/* navbar styles here  */
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
